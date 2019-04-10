@@ -1,0 +1,39 @@
+<html>
+<head><title>Online Banking</title>
+<SCRIPT LANGUAGE="Javascript">
+function checkForm(form) {
+ if (form.elements[0].value=="") {
+  alert("Please Enter a user id");
+  return false
+ }
+ if (form.elements[1].value=="") {
+  alert("Please Enter a password");
+  return false
+ }
+ return true
+}
+</SCRIPT>
+</head>
+
+<body>
+<table border=0 width=100% cellpadding=0 cellspacing=0><tr>
+<td><img src="PhoenixLogo.gif"><img src="PhoenixLogoLine.gif" height=50><a href="/cgi-bin/Team1/logoff.pl"><img src="PhoenixLogOff.gif" border=0></A></td></tr><tr><td>
+
+<FORM onSubmit="return checkForm(this)" name="input" action="/cgi-bin/Team1/login.pl">
+<table border=1 cellpadding=3 cellspacing=0>
+<tr><td colspan=2 valign=middle align=center><b><font size=4>Phoenix Online</font></b></td></tr>
+<tr><th align=right>User ID</th><td align=left>
+<input type="text" name=userid value="" size=20></td></tr>
+<tr><th align=right>Password</th><td align=left>
+<input type="text" name=passwd value="" size=20></td></tr>
+<tr><th align=center colspan=2>
+<input type="Submit" value="Log on"></td></tr>
+</table>
+</FORM>
+
+<a href=register.html>Register</a> for new access.
+
+</td></tr>
+</table>
+</body>
+</html>
