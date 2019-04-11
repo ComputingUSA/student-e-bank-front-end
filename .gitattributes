@@ -1,2 +1,3 @@
-*.html linguist-language=JavaScript
 *.sql linguist-language=SQL
+*.html linguist-language=JavaScript
+
